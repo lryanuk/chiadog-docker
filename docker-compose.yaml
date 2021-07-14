@@ -3,7 +3,7 @@ version: "3"
 services:
     chiadog:
         container_name: chiadog
-        image: artjacobson/chiadog-docker:latest
+        image: lryanuk/chiadog-docker:latest
         volumes:
             - ./config:/root/.chiadog
             - /path/to/chia/log:/root/.chia/mainnet/log:ro

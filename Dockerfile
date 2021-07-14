@@ -14,7 +14,6 @@ RUN dpkg-reconfigure -f noninteractive tzdata
 
 RUN echo "Cloning chiadog"
 RUN git clone --depth 1 --branch ${BRANCH} ${REPO} \
-
 && cd chiadog \
 && python3 -m venv venv \
 && . ./venv/bin/activate \
