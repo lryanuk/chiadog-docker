@@ -1,7 +1,7 @@
 # chiadog-docker
+Source: https://github.com/lryanuk/chiadog-docker
 
 ## Overview
-
 This repo provides a basic Docker image that can be used to run the [Chiadog](https://github.com/martomi/chiadog) monitoring daemon for [Chia](https://www.chia.net). This repo was originally created by [Art Jacobson](https://github.com/ajacobson/chiadog-docker), all credit to them. 
 
 ## Startup
