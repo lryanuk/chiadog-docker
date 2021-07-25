@@ -1,6 +1,6 @@
 FROM ubuntu:latest
 
-ARG BRANCH=v0.6.1
+ARG BRANCH=main
 ARG REPO=https://github.com/martomi/chiadog.git
 
 ENV config_dir=/root/.chiadog/config.yaml
