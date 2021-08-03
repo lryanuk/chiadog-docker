@@ -1,8 +1,11 @@
-# chiadog-docker
+# [DEPRECATED] chiadog-docker
 Source: https://github.com/lryanuk/chiadog-docker
 
+## ⛔️ Deprecated ⛔️
+This repo has been deprecated as the original maintainer now supports linux/arm64 docker builds. Please use https://hub.docker.com/r/artjacobson/chiadog-docker going forwards.
+
 ## Overview
-This repo provides a basic Docker image that can be used to run the [Chiadog](https://github.com/martomi/chiadog) monitoring daemon for [Chia](https://www.chia.net). This repo was originally created by [Art Jacobson](https://github.com/ajacobson/chiadog-docker), all credit to them. 
+This repo provides a basic Docker image that can be used to run the [Chiadog](https://github.com/martomi/chiadog) monitoring daemon for [Chia](https://www.chia.net). This repo was originally created by [Art Jacobson](https://github.com/ajacobson/chiadog-docker), all credit to them.
 
 ## Startup
 It is recommended to store the Chiadog `config.yaml` in persistent storage outside of the Docker container. Chiadog will also need access to the `chia-blockchain` logs at `INFO` level.
@@ -41,7 +44,7 @@ services:
 Ensure that the directory mounted for `/root/.chiadog` includes a `config.yaml`.
 ## Configuration
 
-The path to `config.yaml` can be passed via the `config_dir` environment variable.  Ensure that your `config.yaml` is on a persistent volume, and the `file_log_consumer` has been configured with a correct absolute path within the container. 
+The path to `config.yaml` can be passed via the `config_dir` environment variable.  Ensure that your `config.yaml` is on a persistent volume, and the `file_log_consumer` has been configured with a correct absolute path within the container.
 
 The timezone can also be set via the `TZ` environment variable.  A list of available timezones can be found [here](http://manpages.ubuntu.com/manpages/focal/man3/DateTime::TimeZone::Catalog.3pm.html).
 ```sh
